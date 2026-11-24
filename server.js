@@ -3,9 +3,13 @@ const express = require("express")
 
 const app = express()
 
+
+const util = require("./util/home.js")
+
+
 /************ defalt get route ************/
 app.get("/", (req, res) => {
-    res.send("Hello World! test text from main route.")
+    res.send(util.bildhome())
 })
 
 
